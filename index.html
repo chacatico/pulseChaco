@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Pulse By Chaco</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header>
-		<figure>
+		<figure id="logo">
 			<img src="img/logo.png" />
 		</figure>
-		<h1>
+		<h1 id="titulo_header">
 			Título de la Página
 		</h1>
-		<figure>
+		<figure id="avatar">
 			<img src="img/avatar.jpg" />
 			<figcaption>
 				*
@@ -22,35 +23,36 @@
 	</header>
 	<nav>
 		<ul>
-			<li>*</li>
+			<li id="flechita_nav">*</li>
 			<li>Python</li>
 			<li>HTML5</li>
 			<li>JavaScript</li>
 			<li>CSS3</li>
 			<li>Django</li>
-			<li>Publicar</li>
+			<li id="publicar_nav">Publicar</li>
 		</ul>
 	</nav>
-	<section>
-		<article>
-			<figure>
+	<section id="contenido">
+		<article class="item">
+			<figure class="imagen_item">
 				<img src="img/imagen.jpg" />
 			</figure>
-			<h2>
+			<h2 class="titulo_item">
 				<a href="#">Título del Post</a>
 			</h2>
-			<p>
+			<p class="autor_item">
 				Por: <a href="#">José Rengifo</a>
 			</p>
-			<p>
-				<a href="#">categoría</a>
-				<span>Hace <strong>5</strong> min</span>
-				<a href="#">455</a>
+			<p class="datos_item">
+				<a class="tag_item" href="#">categoría</a>
+				<span class="flecha_item">Hace <strong>5</strong> min</span>
+				<a class="comentarios_item" href="#">455</a>
+				<a class="guardar_item" href="#">*</a>
 			</p>
 			<p>
-				<a href="#">Up</a>
+				<a class="up" href="#">Up</a>
 				3141
-				<a href="#">Down</a>
+				<a class="down" href="#">Down</a>
 			</p>
 		</article>
 	</section>
