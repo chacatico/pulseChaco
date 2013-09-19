@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a
 {
 	color: #DD4F24;
@@ -47,7 +58,15 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+}
+
+header #avatar figcaption:after
+{
+	content: "\e000";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.7;
 }
 
 header #avatar img
@@ -97,20 +116,42 @@ nav ul li a:hover
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 0;
 	text-decoration: none;
+}
+
+nav #flechita_nav a:after
+{
+	content:"\e002";
+	font-family: "icomoon";
+	opacity: 0.6;
 }
 
 nav #publicar_nav
 {
+	background: #DD4F24;
+	font-weight: bold;
 	float: right;
-
 	margin-right: 0;
+	padding-right: 1.5em;
+	position: relative;
+}
+
+nav #publicar_nav:after
+{
+	color: rgba(255, 255, 255, 0.5);
+	content: "\e003";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 nav #publicar_nav a
 {
-	background: #DD4F24;
+
+	display: inline-block;
 	text-decoration: none;
 	padding: 0.5em 0.5em;
 }
@@ -129,10 +170,23 @@ nav #publicar_nav a
 	position: relative;
 }
 
+#contenido .item a
+{
+	text-decoration: none;
+}
+
 #contenido .item p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
+}
+
+#contenido .item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e004";
+	font-family: "icomoon";
+	font-size: 1.2em;
 }
 
 #contenido .item .datos_item .tag_item
@@ -173,9 +227,34 @@ nav #publicar_nav a
 	background: #FFF;
 	border-radius: 0 0 0.5em 0.5em;
 	margin: 3px 0 0 0;
-	padding: 0.5em 0;
+	padding: 0.2em 0;
 	position: absolute;
 	text-align: center;
 	width: 96px;
 	top: 100%;
+}
+
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+
+#contenido .item .votacion .up,
+#contenido .item .votacion .down
+{
+	font-family: 'icomoon';
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e000";
+}
+
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e001";
 }
