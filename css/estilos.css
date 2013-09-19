@@ -45,25 +45,32 @@ header
 	padding:0.5em;
 }
 
-header figure, header h1
+header:after
 {
-	display:inline-block;
-	vertical-align: top;
+	clear: both;
+	content: "";
+	display: block;
+}
 
+header figure
+{
+	float:left;
 }
 
 header h1
 {
+	display: block;
 	font-size: 20px;
 	font-weight: normal;
-	margin:1em 0 0 1em;
-	width: 60%;
+	margin:1em 85px 1em 5em;
 }
 
 header #avatar
 {
-	float: right;
 	margin: 1em 0.2em 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 header #avatar figcaption
